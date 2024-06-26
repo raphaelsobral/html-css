@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body {
+    background-color: blueviolet;
+    color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: rgb(212, 255, 0);
+}

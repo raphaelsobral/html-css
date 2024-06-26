@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <h1>Videos hospedados localmente</h1>
+    <p>Este video está na minha própria máquina!!</p>
+     <!--
+        <video src="midia/meu-video2.webm" width="500" controls></video>
+    -->
+
+    <video width="500" poster="midia/thumb.png" controls>
+        <source src="midia/meu-video1.mp4" type="video/mp4">
+        <source src="midia/meu-video2.webm" type="video/webm">
+        <p>Seu navegador não consegue carregar o vídeo.</p>
+    </video>
+
+    <h1>Videos hospedados no Youtube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/8rLXNJqll7Q?si=00v14QPSqjDnNze3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Videos hospedados no Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/332760277?h=5635f14a59&byline=0&portrait=0" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
