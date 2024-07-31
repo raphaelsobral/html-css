@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralization</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #container {
+            position: relative;
+            height: 100vh;
+            background-color: deeppink;
+            background-image: url(target001.png);
+            background-size: 100% 100%;
+        }
+
+        #content {
+            position: absolute;
+            width: 500px;
+            height: 400px;
+            background-color: deepskyblue;
+            background-image: url(target001.png);
+            background-size: 100% 100%;
+            top: 50%;
+            left: 50%; 
+            transform: translate(-50%, -50%);
+        }
+   
+    </style>
+</head>
+<body>
+    <div id="container">
+        <p>pedro paulo</p>
+        <div id="content">
+            <p>e alex</p>
+        </div>
+    </div>
+</body>
+</html>
