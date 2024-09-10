@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+      th, td {
+        border: 1px solid black;
+        text-align: center;
+        padding: 5px;
+      }
+
+      .upper td:nth-child(1) {
+        background-color: rgba(0, 255, 187, 0.59);
+      }
+
+      .lower td:last-child {
+        background-color: rgba(0, 255, 187, 0.59);
+      }
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="upper">
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <td>E</td>
+        </tr>
+        <tr  class="upper">
+            <td colspan="2">F</td>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr  class="upper">
+            <td colspan="3">J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+        <tr  class="upper">
+            <td colspan="4">M</td>
+            <td>N</td>
+        </tr>
+        <tr  class="upper">
+            <td colspan="5">O</td>
+        </tr>
+        <tr class="lower">
+            <td>P</td>
+            <td colspan="4">Q</td>
+        </tr>
+        <tr class="lower">
+            <td>R</td>
+            <td>S</td>
+            <td colspan="3">T</td>
+        </tr>
+        <tr class="lower">
+            <td>U</td>
+            <td>V</td>
+            <td>W</td>
+            <td colspan="2">X</td>
+        </tr>
+        <tr class="lower">
+            <td rowspan>Y</td>
+            <td>Z</td>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+    </table>
+</body>
+</html>

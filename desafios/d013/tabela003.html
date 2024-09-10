@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            width: 500px;
+            height: 350px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        
+        th, td {
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        th {
+            background-color: rgba(50, 230, 140, 0.589);
+        }
+
+        caption{
+            font-size: 1.1em;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Algumas músicas e cantores que escuto</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nome</th>
+                <th scope="colgroup" colspan="3">Músicas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Sunmi</td>
+                <td>Heroine</td>
+                <td>Tail</td>
+                <td>24 Hours</td>
+            </tr>
+            <tr>
+                <td>BabyMetal</td>
+                <td>Headbanger</td>
+                <td>Papaya</td>
+                <td>BxMxC</td>
+            </tr>
+            <tr>
+                <td>Taeyeon</td>
+                <td>INVU</td>
+                <td>Fine</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>Taemin</td>
+                <td>Blue</td>
+                <td>Guilty</td>
+                <td>My Day</td>
+            </tr>
+            <tr>
+                <td>Minho</td>
+                <td>Chase</td>
+                <td>Runaway</td>
+                <td>I'm Home</td>
+            </tr>
+            <tr>
+              <td>Jonghyun</td>
+              <td>Monodrama</td>
+              <td>Suit Up</td>
+              <td>She Is</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
