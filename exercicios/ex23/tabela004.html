@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        caption {
+            padding: 5px;
+            font-size: 1.2em;
+        }
+
+        caption:hover::after {
+            content: '\1F48E';
+        }
+
+        #cAlias {
+            background-color: aquamarine;
+        }
+
+        #cAgeandcSong {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Colgroup</h1>
+    
+    
+    <table>
+        <colgroup>
+            <col id="cName">
+            <col id="cAlias">
+            <col id="cAgeandcSong" span="2">
+        </colgroup>
+        <caption>Diamonds</caption>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Alias</th>
+            <th scope="col">Age</th>
+            <th scope="col">Song</th>
+        </tr>
+        <tr>
+            <td>Lee Jin-ki</td>
+            <td>Onew</td>
+            <td>34</td>
+            <td>Beat Drum</td>
+        </tr>
+        <tr>
+           <td>Kim Jong-hyun</td>
+           <td>Jonghyun</td>
+           <td>34</td>
+           <td>Monodrama</td> 
+        </tr>
+        <tr>
+           <td>Kim Ki-bum</td>
+           <td>Key</td>
+           <td>32</td>
+           <td>Bound</td> 
+        </tr>
+        <tr>
+            <td>Choi Min-ho</td>
+            <td>Minho</td>
+            <td>32</td>
+            <td>Runaway</td>
+        </tr>
+        <tr>
+           <td>Lee Tae-min</td>
+           <td>Taemin</td>
+           <td>31</td>
+           <td>Guilty</td> 
+        </tr>
+    </table>
+</body>
+</html>
