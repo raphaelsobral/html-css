@@ -7,14 +7,14 @@
 </head>
 <body>
     <h1>Teste de Formulário</h1>
-    <form action="cadastro.js" method="post">
+    <form action="cadastro.js" method="post" autocomplete="on">
         <p>
             <label for="user">Usuário: </label>
-            <input type="text" name="usuario" id="user" required>
+            <input type="text" name="usuario" id="user" required placeholder="Kanaphan Filho..." autocomplete="username">
         </p>
         <p>
             <label for="pass">Senha: </label>
-            <input type="password" name="senha" id="pass" required>
+            <input type="password" name="senha" id="pass" required minlength="8" placeholder="Mínimo de 8 digitos">
         </p>
         <p>
             <input type="submit" value="Enviar">
