@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Form</h1>
+    <form action="" method="get" autocomplete="on">
+
+        <p>
+           <label for="shinee">Membro Favorito: </label>
+           <select name="shawol" id="shinee" required>
+            <optgroup label="linduxos">
+                <option value="" selected disabled>---Escolha---</option>
+                <option value="ljk">Onew</option>
+                <option value="kjh">Jonghyun</option>
+                <option value="kkb">Key</option>
+                <option value="cmh">Minho</option>
+                <option value="ltm">Taemin</option>
+            </optgroup>
+           </select>
+        </p>
+        
+        <p>
+            <label for="job">Profissão: </label>
+            <input type="text" name="work" id="job" list="joblist" placeholder="unem" required>
+            <datalist id="joblist">
+                <option>Professor</option>
+                <option>Contador</option>
+                <option>Desenvolvedor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="msg">Mensagem: </label placeholder="Escreva aqui..." required>
+            <textarea name="message" id="msg" cols="30" rows="5" placeholder="Digite aqui..."></textarea>
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>

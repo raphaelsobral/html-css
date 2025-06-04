@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* estilo para impressora */
+
+* {
+    margin: 8px;
+    padding: 5px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.3em;
+}
+
+menu {
+    display: none;
+}
+
+article {
+    width: 100%;
+}
+
+article::after {
+    content: 'This article has been printed from the (fake) website www.shineeworld.com';
+    font-size: 0.8em;
+}
