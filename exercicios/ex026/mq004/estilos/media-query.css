@@ -1,0 +1,84 @@
+@charset "UTF:8";
+
+/* Todas as mídias */
+
+/* Typical  Device Breakpoints
+Piso de conforto minimo (320px  - 360px)
+Pequenas Telas: ( - 480px) *ignored by mobile-first
+Celular: (481px - 767px) *as well
+Tablet: (768px - 1023px)
+Desktop: (1024px - 1365px)
+Grandes Telas: (1366px - )*/
+
+@media print {
+    h1 {
+        text-shadow: none;
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg); /* não imprime background. thus, it's unnecessary*/
+    }
+
+    main {
+        border: 1px solid black;
+    }
+
+    main::after{
+        content: 'Essa impressão foi feita através do site www.leejonksbonitao.com';
+        text-align: center;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #printer {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #tablet {
+        display: block;
+    }
+    
+    #phone {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #pc {
+        display: block;
+    }
+
+    #phone {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1366px){
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    #tv {
+        display: block;
+    }
+
+    #phone {
+        display: none;
+    }
+}
+
