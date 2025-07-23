@@ -6,7 +6,9 @@ menu.addEventListener('click', function(e) {
 
     if (navLinks.classList.contains('visible')) {
         menu.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+        menu.setAttribute('aria-expanded', 'true');
     } else {
         menu.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+        menu.setAttribute('aria-expanded', 'false');
     }
 })
